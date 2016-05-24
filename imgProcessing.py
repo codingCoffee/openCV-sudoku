@@ -163,7 +163,7 @@ def main(file_number):
     ### code for checking output for single image ###
     #'''
     #code for checking output for single image
-    Sudoku_Image = cv2.imread('trial images/sudoku '+str(file_number)+'.png')
+    Sudoku_Image = cv2.imread('trial-images/sudoku '+str(file_number)+'.png')
     #global OGimg
     #OGimg = Sudoku_Image.copy()
     #cv2.imshow('Sudoku_Image', Sudoku_Image)
@@ -174,7 +174,7 @@ def main(file_number):
     ### code for checking output for all images ###
     #no_of_test_images = 5
     for file_number in range(1,no_of_test_images+1):
-        file_name = 'trial images/sudoku '+str(file_number)+'.png'
+        file_name = 'trial-images/sudoku '+str(file_number)+'.png'
         Sudoku_Image = cv2.imread(file_name)
         Warped_Sudoku_Image = flowChart(Sudoku_Image)
         cv2.waitKey(0)
